@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+	--Pale_blue: hsl(225, 100%, 94%);
+	--Bright_blue: hsl(245, 75%, 52%);
+	--Very_pale_blue: hsl(225, 100%, 98%);
+	--Desaturated_blue: hsl(224, 23%, 55%);
+	--Dark_blue: hsl(223, 47%, 23%);
+}
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+  background-image: url(images/pattern-background-mobile.svg);
+	background-color: var(--Pale_blue);
+	background-repeat: no-repeat;
+	font-family: 'Red Hat Display', sans-serif;
+	background-size: contain;
+}
+.main-container{
+	background-color: white;
+	width: 328px;
+	height: 570px;
+	border-radius: 18px;
+	overflow: hidden;
+	margin: 70px auto;
+	
+}
+.image{
+	background-size: cover;
+	height: 162px;
+}
+.title-order{
+	color: var(--Dark_blue);
+	text-align: center;
+	font-weight: 900px;
+	font-size: 1.4em;
+	margin: 24px 0 20px;
+}
+.description{
+	color: var(--Desaturated_blue);
+	text-align: center;
+	font-size: 0.95em;
+	line-height: 24px;
+  padding: 0 35px 24px 35px;
+}
+
+.plan-annual{
+	background-color: var(--Very_pale_blue);
+	display: flex;
+	width:278px;
+	height: 82px;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 10px;
+	margin: 0 auto 22px;
+	padding: 0 5px 0 5px;
+}
+.icon-container{
+  background-image: url(images/icon-music.svg);
+	background-repeat: no-repeat;
+	height: 50px;
+	width: 50px;
+}
+.description-annual{
+	color: var(--Dark_blue);
+	font-weight: 900;
+	font-size: 0.86em;
+}
+.price-annual{
+	color: var(--Desaturated_blue);
+	font-size: 0.9em;
+}
+.change{
+	color: var(--Bright_blue);
+	font-weight: 700;
+	font-size: 0.8em;
+	margin-left: 25px;
+}
+.change:hover{
+	text-decoration: none;
+	color: var(--Desaturated_blue);
+
+}
+.btn{
+  background-color: var(--Bright_blue);
+	color: var(--Very_pale_blue);
+	display: block;
+	width: 280px;
+	height: 53px;
+	margin: 0 auto 18px;
+	font-weight: 900;
+	font-size: 0.95em;
+	border: none;
+	border-radius: 8px;
+	box-shadow:1px 10px 8px 3px var(--Pale_blue);
+}
+.btn:hover{
+	background-color: var(--Desaturated_blue);
+	cursor: pointer;
+}
+.cancel-container{
+  text-align: center;
+}
+.cancel{
+	color: var(--Desaturated_blue);
+	text-decoration: none;
+	font-weight: 900;
+	font-size: 0.9em;
+}
+.cancel:hover{
+	color: var(--Dark_blue);
+}
+.attribution { 
+	font-size: 11px; 
+	text-align: center;
+}
+.attribution a { 
+	olor: hsl(228, 45%, 44%);
+}
+@media only screen and (min-width:700px) {
+	body{
+		background-image: url(images/pattern-background-desktop.svg);
+		background-size: contain;
+	}
+	.main-container{
+		width: 452px;
+		height: 697px;
+		margin: 101px auto;
+	}
+	.image{
+		height: 221px;
+	}
+	.title-order{
+		font-size: 1.8em;
+		margin: 40px 0 15px;
+	}
+
+	.description{
+		font-size: 1em;
+		margin: 0 40px 20px 40px;
+		line-height: 26px;
+		padding-bottom: 0px;
+	}
+	.plan-annual{
+		width: 354px;
+		height: 100px;
+		margin-bottom: 28px;
+	}
+	.payment{
+		margin-left: -30px;
+	}
+	.description-annual{
+		font-size: 1em;
+	}
+	.price-annual{
+		font-size: 1em;
+	}
+	.change{
+		font-size: 0.86em;
+	}
+		.btn{
+		width: 355px;
+		margin: 31px auto 30px;
+	}
+}
